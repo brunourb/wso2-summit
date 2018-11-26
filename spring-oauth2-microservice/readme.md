@@ -1,1 +1,17 @@
 
+# Introduction
+A demo spring boot application to show how to access resources protected by OAuth2. The OAuth2 server used in the demo is WSO2 Identity Server
+
+# Building The Application
+Navigate to the root of the application (.pom) file and execute 
+```
+mvn clean install
+```
+
+# Running The Application
+To run the application, you will need to provide the SSL certificate of the WSO2 Identity server. Use the following command,
+```
+java  -Djavax.net.ssl.trustStore=/Users/anupamgogoi/softwares/wso2/is/wso2is-5.7.0/repository/resources/security/client-truststore.jks \
+-Djavax.net.ssl.trustStorePassword=wso2carbon \
+-jar /Users/anupamgogoi/git/wso2-summit/spring-oauth2-microservice/target/spring-oauth2-microservice-1.0.0.jar
+```
