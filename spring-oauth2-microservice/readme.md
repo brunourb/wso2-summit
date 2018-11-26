@@ -33,3 +33,10 @@ curl -u <CLIENT_ID>:<CLIENT_SECRET> -k \
 -d "grant_type=password&username=admin&password=admin" -H "Content-Type:application/x-www-form-urlencoded" \
 https://localhost:9443/oauth2/token
 ```
+
+# Make Request With Access Token
+Once access token is in hand from the previous step, send it in the Authorization header as shown below,
+```
+curl -k http://localhost:8080/app/products -H "Authorization: Bearer 87a315a7-0819-3747-817f-dc057d2b1a1c"
+```
+You should get a list of products.
