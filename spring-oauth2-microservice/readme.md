@@ -24,3 +24,12 @@ GET /app/products
 ```
 To access the resource, we must provide the Bearer token in the Authorization header of the request. The Bearer token is generated using the WSO2 Identity Server.
 
+# Configure WSO2 Identity Server
+
+# Generate Access Token
+After generating the clientId & clientSecret in IS, use them to get the access token as shown below,
+```
+curl -u <CLIENT_ID>:<CLIENT_SECRET> -k \
+-d "grant_type=password&username=admin&password=admin" -H "Content-Type:application/x-www-form-urlencoded" \
+https://localhost:9443/oauth2/token
+```
