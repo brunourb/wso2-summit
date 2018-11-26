@@ -15,3 +15,12 @@ java  -Djavax.net.ssl.trustStore=/Users/anupamgogoi/softwares/wso2/is/wso2is-5.7
 -Djavax.net.ssl.trustStorePassword=wso2carbon \
 -jar /Users/anupamgogoi/git/wso2-summit/spring-oauth2-microservice/target/spring-oauth2-microservice-1.0.0.jar
 ```
+Remember to change the paths
+
+# Protected Resource
+We have a single OAuth2 protected resource in the demo application,
+```
+GET /app/products
+```
+To access the resource, we must provide the Bearer token in the Authorization header of the request. The Bearer token is generated using the WSO2 Identity Server.
+
