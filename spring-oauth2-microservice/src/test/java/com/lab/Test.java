@@ -2,7 +2,7 @@ package com.lab;
 
 
 
-public class SpringOauth2MicroserviceApplicationTests {
+public class Test {
 
 
 	public void contextLoads() {
