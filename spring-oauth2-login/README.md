@@ -1,7 +1,7 @@
 ![](https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/spring-oauth2-login/docs/sso-gif.gif?raw=true)
 
 # Introduction
-This is a simple demo showing how [WSO2 Identity Server](https://wso2.com/identity-and-access-management/)can be used to secure a Spring Boot based web application using OpenID Connect.
+This is a simple demo showing how [WSO2 Identity Server](https://wso2.com/identity-and-access-management/) can be used to secure a Spring Boot based web application using OpenID Connect.
 
 # System Configuration
 The URLs,
