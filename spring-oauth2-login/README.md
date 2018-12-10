@@ -1,3 +1,4 @@
+![](https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/spring-oauth2-login/docs/sso-gif.gif?raw=true)
 # System Configuration
 The URLs,
 ```
