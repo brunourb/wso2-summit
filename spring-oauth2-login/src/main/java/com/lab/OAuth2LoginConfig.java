@@ -11,7 +11,12 @@ import org.springframework.security.oauth2.core.AuthorizationGrantType;
 import org.springframework.security.oauth2.core.ClientAuthenticationMethod;
 import org.springframework.security.oauth2.core.oidc.IdTokenClaimNames;
 
-@Configuration
+/**
+ * The programmatic configuration of SSO.
+ * To make it effective, uncomment the @Configuration and comment the respected properties
+ * in the application.yaml
+ */
+//@Configuration
 public class OAuth2LoginConfig {
 
 

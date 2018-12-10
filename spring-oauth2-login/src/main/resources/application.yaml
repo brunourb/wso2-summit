@@ -1,2 +1,23 @@
 server:
   port: 8081
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          wso2:
+            clientId: lVKMPDEnQw5wS5wVZ7EtMmV_o9ka
+            clientSecret: wdN1ExXIDG8NUoefl4nV13B8uH4a
+            redirectUri: http://local.app:8081/login/oauth2/code/wso2
+            authorizationGrantType: authorization_code
+            scope:
+              - openid
+              - profile
+        provider:
+          wso2:
+            authorizationUri: http://local.idp:9763/oauth2/authorize
+            tokenUri: http://local.idp:9763/oauth2/token
+            userInfoUri: http://local.idp:9763/oauth2/userinfo
+            jwkSetUri: http://local.idp:9763/oauth2/jwks
+            userNameAttribute: sub
