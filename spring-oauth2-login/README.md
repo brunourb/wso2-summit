@@ -1,7 +1,7 @@
 ![](https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/spring-oauth2-login/docs/sso-gif.gif?raw=true)
 
 # Introduction
-This is a simple demo showing how [WSO2 Identity Server](https://wso2.com/identity-and-access-management/)can be used as SSO server for a Springboot application.
+This is a simple demo showing how [WSO2 Identity Server](https://wso2.com/identity-and-access-management/)can be used to secure a Spring Boot based web application using OpenID Connect.
 
 # System Configuration
 The URLs,
@@ -16,8 +16,8 @@ Let's define hosts in **/etc/hosts** file (MacOS)
 
 # Create Springboot applicatin
 
-Create a Springboot application with Web and Security modules using https://start.spring.io/.
-Once the project is downloaded, open the pom.xml in its root and add the following dependency,
+Create a Spring Boot application with Web and Security modules using https://start.spring.io/.
+Once the project is downloaded, open the **pom.xml** in its root and add the following dependency,
 ```
 <dependency>
      <groupId>org.springframework.security</groupId>
@@ -27,7 +27,7 @@ Once the project is downloaded, open the pom.xml in its root and add the followi
 This module adds the OpenID Connect libraries etc.
 
 # Implementation
-SSO with WSO2 Identity Server can be implemented in the Springboot application either **programmatically** or by **configuring** certain properties in **application.yaml** (**application.properties**).
+A Spring Boot application can be configured either **programmatically** or by **configuring** certain properties in **application.yaml** (**application.properties**) to be OAuth/OpenID protected. 
 
 ## Programmatic Approach
 Create a class and annonate with @Configuration. E.g,
