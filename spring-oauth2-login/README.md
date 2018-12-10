@@ -87,6 +87,15 @@ spring:
 
 ```
 
+# Running the application
+Running the application straight forward. Either you can run the application from IDE or using maven.
+```
+mvn spring-boot:run
+```
+Once the application is up, it can be accessible at the following URl,
+```
+http://local.app:8081
+```
 # Identity Server Configuration
 Here is a screen-shot,
 ![](https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/spring-oauth2-login/docs/is-service-provider.png?raw=true)
