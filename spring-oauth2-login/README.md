@@ -1,5 +1,13 @@
 # System Configuration
-Let's define hosts in /etc/hosts file (MacOS)
+The URLs,
+```
+Identity Server: https://local.idp:9443
+Springboot Application: http://local.app:8081
+```
+
+
+Let's define hosts in **/etc/hosts** file (MacOS)
+![](https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/spring-oauth2-login/docs/hosts-config.png?raw=true)
 
 # Create Springboot applicatin
 
@@ -48,3 +56,35 @@ public class OAuth2LoginConfig {
 }
 ```
 **clientId** and **clientSecret** are generated when you configure a Service Provider in IS.
+You are done.
+
+## Configuring application.yaml
+Here is the same configuration fot the above approach in **application.yaml**
+```
+server:
+  port: 8081
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          wso2:
+            clientId: lVKMPDEnQw5wS5wVZ7EtMmV_o9ka
+            clientSecret: wdN1ExXIDG8NUoefl4nV13B8uH4a
+            redirectUri: http://local.app:8081/login/oauth2/code/wso2
+            authorizationGrantType: authorization_code
+            scope:
+              - openid
+              - profile
+        provider:
+          wso2:
+            authorizationUri: http://local.idp:9763/oauth2/authorize
+            tokenUri: http://local.idp:9763/oauth2/token
+            userInfoUri: http://local.idp:9763/oauth2/userinfo
+            jwkSetUri: http://local.idp:9763/oauth2/jwks
+            userNameAttribute: sub
+
+```
+
+
