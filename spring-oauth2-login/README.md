@@ -1,4 +1,7 @@
-# Introduction
+# System Configuration
+Let's define hosts in /etc/hosts file (MacOS)
+
+# Create Springboot applicatin
 
 Create a Springboot application with Web and Security modules using https://start.spring.io/
 Once the project is downloaded, open the pom.xml in its root and add the following dependency,
