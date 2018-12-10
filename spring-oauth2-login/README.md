@@ -91,5 +91,5 @@ spring:
 Here is a screen-shot,
 ![](https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/spring-oauth2-login/docs/is-service-provider.png?raw=true)
 
-The important part is CallbackUrl. For detail information, please read this [link].(https://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/#oauth2login-sample-redirect-uri)
+The important part is CallbackUrl. For detail information, please read this [link](https://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/#oauth2login-sample-redirect-uri).
 
