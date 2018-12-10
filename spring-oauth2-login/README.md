@@ -22,7 +22,7 @@ Once the project is downloaded, open the pom.xml in its root and add the followi
 This module adds the OpenID Connect libraries etc.
 
 # Implementation
-SSO with WSO2 Identity Server can be implemented in the Springboot application either programmatically or by configuring certain properties in **application.yaml** (**application.properties**).
+SSO with WSO2 Identity Server can be implemented in the Springboot application either **programmatically** or by **configuring** certain properties in **application.yaml** (**application.properties**).
 
 ## Programmatic Approach
 Create a class and annonate with @Configuration. E.g,
