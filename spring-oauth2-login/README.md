@@ -103,3 +103,7 @@ Here is a screen-shot,
 
 The important part is CallbackUrl. For detail information, please read this [link](https://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/#oauth2login-sample-redirect-uri).
 
+Here is where to locate the **clientId** & **clientSecret**,
+![](https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/spring-oauth2-login/docs/is-clientid-clientsecret.png?raw=true)
+
+
