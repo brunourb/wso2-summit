@@ -12,7 +12,7 @@ Let's define hosts in **/etc/hosts** file (MacOS)
 
 # Create Springboot applicatin
 
-Create a Springboot application with Web and Security modules using https://start.spring.io/
+Create a Springboot application with Web and Security modules using https://start.spring.io/.
 Once the project is downloaded, open the pom.xml in its root and add the following dependency,
 ```
 <dependency>
@@ -60,7 +60,7 @@ public class OAuth2LoginConfig {
 You are done.
 
 ## Configuring application.yaml
-Here is the same configuration fot the above approach in **application.yaml**
+Here is the same configuration for the above approach in **application.yaml**,
 ```
 server:
   port: 8081
@@ -89,11 +89,11 @@ spring:
 ```
 
 # Running the application
-Running the application straight forward. Either you can run the application from IDE or using maven.
+Running the application is straightforward. Either you can run the application from IDE or using maven.
 ```
 mvn spring-boot:run
 ```
-Once the application is up, it can be accessible at the following URl,
+Once the application is up, it can be accessible at the following URL,
 ```
 http://local.app:8081
 ```
