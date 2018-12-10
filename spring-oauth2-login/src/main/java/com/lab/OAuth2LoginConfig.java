@@ -23,8 +23,8 @@ public class OAuth2LoginConfig {
 
     private ClientRegistration WSO2ClientRegistration() {
         return ClientRegistration.withRegistrationId("wso2")
-                .clientId("fcf7rhaLF9jX2G6pghT261NaPO4a")
-                .clientSecret("TKOnPuD_Clfy8jXvWdnp6M_hTuEa")
+                .clientId("lVKMPDEnQw5wS5wVZ7EtMmV_o9ka")
+                .clientSecret("wdN1ExXIDG8NUoefl4nV13B8uH4a")
                 .clientAuthenticationMethod(ClientAuthenticationMethod.BASIC)
                 .authorizationGrantType(AuthorizationGrantType.AUTHORIZATION_CODE)
                 .redirectUriTemplate("{baseUrl}/login/oauth2/code/{registrationId}")

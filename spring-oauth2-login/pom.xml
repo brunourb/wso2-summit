@@ -14,8 +14,8 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.0.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <version>2.1.1.RELEASE</version>
+        <relativePath/>
     </parent>
 
     <properties>
@@ -37,19 +37,11 @@
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-oauth2-client</artifactId>
         </dependency>
+        <!-- OpenID Connect Authentication Provider -->
         <dependency>
-            <groupId>org.springframework.security.oauth.boot</groupId>
-            <artifactId>spring-security-oauth2-autoconfigure</artifactId>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-oauth2-jose</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-oauth2</artifactId>
-        </dependency>
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.security</groupId>-->
-            <!--<artifactId>spring-security-oauth2-jose</artifactId>-->
-        <!--</dependency>-->
-
     </dependencies>
 
     <build>
