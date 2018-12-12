@@ -18,7 +18,8 @@ To use this annotation, you must include the following maven dependency,
 </dependency>
 ```
 
-When you use **@EnableOAuth2Sso** annotation, it's necessary to configure the following properties in **application.yaml** file.
+When you use **@EnableOAuth2Sso** annotation, it's necessary to configure the following properties in **application.yaml** file,
+
 ```
 security:
   basic:
@@ -34,4 +35,9 @@ security:
     resource:
       userInfoUri: http://local.idp:9763/oauth2/userinfo
 ```
-But, how will you figure out these properties? So, here is a clue.
+But, how will you figure out these properties? So, here is a clue. Here is the location of the @EnableOAuth2Sso,
+![](https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/EnableOAuth2Sso.png?raw=true)
+
+Check the class **OAuth2ClientProperties**,
+
+![](https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/OAuth2ClientProperties.png?raw=true)
