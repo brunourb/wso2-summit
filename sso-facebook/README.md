@@ -59,3 +59,11 @@ Browse to the parent class of the underlined class and you will see these proper
 
 ![](https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/BaseOAuth2ProtectedResourceDetails.png?raw=true)
 
+
+# Configure A Facebook Application
+
+![](https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/FacebookApp.png?raw=true)
+
+# Configure Facebook as Identity Provider in WSO2 IS
+
+![](https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/ConfigureFacebookAsIDP.png?raw=true)
