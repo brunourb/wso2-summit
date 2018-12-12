@@ -47,6 +47,11 @@ When **EnableOAuth2Sso** annotation is executed the following **Configuration** 
 
 ![](https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/OAuth2AutoConfiguration.png?raw=true)
 
+This configuration class wires the **OAuth2ClientProperties** bean which contains **clientId** and **clientSecret** properties.
 
+![](https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/OAuth2ClientProperties.png?raw=true)
 
+## 2. OAuth2ProtectedResourceDetailsConfiguration
+
+![](https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/OAuth2ProtectedResourceDetailsConfiguration.png?raw=true)
 
