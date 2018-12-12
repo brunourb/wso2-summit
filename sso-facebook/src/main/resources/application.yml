@@ -1,0 +1,15 @@
+server:
+  port: 8081
+security:
+  basic:
+    enabled: false
+  oauth2:
+    client:
+      clientId: lVKMPDEnQw5wS5wVZ7EtMmV_o9ka
+      clientSecret: wdN1ExXIDG8NUoefl4nV13B8uH4a
+      scope:
+        - openid
+      accessTokenUri: http://local.idp:9763/oauth2/token
+      userAuthorizationUri: http://local.idp:9763/oauth2/authorize
+    resource:
+      userInfoUri: http://local.idp:9763/oauth2/userinfo
