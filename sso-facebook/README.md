@@ -67,3 +67,11 @@ Browse to the parent class of the underlined class and you will see these proper
 # Configure Facebook as Identity Provider in WSO2 IS
 
 ![](https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/ConfigureFacebookAsIDP.png?raw=true)
+
+# Configure Spring Boot application as Service Provider in WSO2 IS
+
+![](https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/SP-Inbound.png?raw=true)
+
+Detail configuration of the SP,
+
+![](https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/SP-Inbound-Detail.png?raw=true)
