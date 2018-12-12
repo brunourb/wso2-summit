@@ -3,7 +3,7 @@ Create a simple Spring Boot web application with two pages **index.html** and **
 the user must be authenticated. The application is configured in the WSO2 Identity Server as **Service Provider**. Facebook is 
 configured as **Federated Identity Server** in the WSO2 Identity Server.
 
-# Brief About Spring Boot
+# Brief About Spring Boot (Skip this)
 You can skip this step. This is only an informative section to give an insight of Spring Boot. We are using the following annotation in the application,
 ```
 @org.springframework.boot.autoconfigure.security.oauth2.client.EnableOAuth2Sso
@@ -54,4 +54,8 @@ This configuration class wires the **OAuth2ClientProperties** bean which contain
 ## 2. OAuth2ProtectedResourceDetailsConfiguration
 
 ![](https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/OAuth2ProtectedResourceDetailsConfiguration.png?raw=true)
+
+Browse to the parent class of the underlined class and you will see these properties.
+
+![](https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/BaseOAuth2ProtectedResourceDetails.png?raw=true)
 
