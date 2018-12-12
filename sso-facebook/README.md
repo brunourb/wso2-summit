@@ -75,3 +75,8 @@ Browse to the parent class of the underlined class and you will see these proper
 Detail configuration of the SP,
 
 ![](https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/SP-Inbound-Detail.png?raw=true)
+
+Outbound Authentication Configuration,
+
+![](https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/SP-Outbound.png?raw=true)
+
