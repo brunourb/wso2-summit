@@ -35,9 +35,18 @@ security:
     resource:
       userInfoUri: http://local.idp:9763/oauth2/userinfo
 ```
-But, how will you figure out these properties? So, here is a clue. Here is the location of the @EnableOAuth2Sso,
+But, how will you figure out these properties? So, here is a clue. 
+
+Here is the location of the @EnableOAuth2Sso,
+
 ![](https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/EnableOAuth2Sso.png?raw=true)
 
-Check the class **OAuth2ClientProperties**,
+When **EnableOAuth2Sso** annotation is executed the following **Configuration** classes are executed,
 
-![](https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/OAuth2ClientProperties.png?raw=true)
+## 1. OAuth2AutoConfiguration
+
+![](https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/OAuth2AutoConfiguration.png?raw=true)
+
+
+
+
