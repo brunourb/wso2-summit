@@ -39,13 +39,17 @@ But, how will you figure out these properties? So, here is a clue.
 
 Here is the location of the @EnableOAuth2Sso,
 
-![](https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/EnableOAuth2Sso.png?raw=true)
+<p>
+    <img src="https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/EnableOAuth2Sso.png?raw=true" alt="Smiley face" height="400" width="700">
+</p>
 
 When **EnableOAuth2Sso** annotation is executed the following **Configuration** classes are executed,
 
 ## 1. OAuth2AutoConfiguration
 
-![](https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/OAuth2AutoConfiguration.png?raw=true)
+<p>
+    <img src="https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/OAuth2AutoConfiguration.png?raw=true" height="400" width="700">
+</p>
 
 This configuration class wires the **OAuth2ClientProperties** bean which contains **clientId** and **clientSecret** properties.
 
