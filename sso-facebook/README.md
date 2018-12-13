@@ -1,9 +1,7 @@
 # Introduction 
-Create a simple Spring Boot web application with two pages **index.html** and **restricted.html**. To access the **restricted.html**.
-the user must be authenticated. The application is configured in the WSO2 Identity Server as **Service Provider**. Facebook is 
-configured as **Federated Identity Server** in the WSO2 Identity Server.
+Create a simple Spring Boot web application with two pages **index.html** and **restricted.html**. To access the **restricted.html**, the user must be authenticated. The application is configured in the WSO2 Identity Server as **Service Provider**. Facebook is configured as **Federated Identity Server** in the WSO2 Identity Server.
 
-# Brief About Spring Boot (Skip this)
+# Brief Description About Spring Boot (Skip this)
 You can skip this step. This is only an informative section to give an insight of Spring Boot. We are using the following annotation in the application,
 ```
 @org.springframework.boot.autoconfigure.security.oauth2.client.EnableOAuth2Sso
@@ -79,24 +77,24 @@ Browse to the parent class of the underlined class and you will see these proper
 # Configure Facebook as Identity Provider in WSO2 IS
 
 <p>
-    <img src="https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/ConfigureFacebookAsIDP.png?raw=true" height="400" width="700">
+    <img src="https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/ConfigureFacebookAsIDP.png?raw=true" height="600" width="700">
 </p>
 
 # Configure Spring Boot application as Service Provider in WSO2 IS
 
 <p>
-    <img src="https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/SP-Inbound.png?raw=true" height="400" width="700">
+    <img src="https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/SP-Inbound.png?raw=true" height="600" width="700">
 </p>
 
 Detail configuration of the SP,
 
 <p>
-    <img src="https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/SP-Inbound-Detail.png?raw=true" height="400" width="700">
+    <img src="https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/SP-Inbound-Detail.png?raw=true" height="600" width="700">
 </p>
 
 Outbound Authentication Configuration,
 
 <p>
-    <img src="https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/SP-Outbound.png?raw=true" height="400" width="700">
+    <img src="https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/SP-Outbound.png?raw=true" height="600" width="700">
 </p>
 
