@@ -53,34 +53,50 @@ When **EnableOAuth2Sso** annotation is executed the following **Configuration** 
 
 This configuration class wires the **OAuth2ClientProperties** bean which contains **clientId** and **clientSecret** properties.
 
-![](https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/OAuth2ClientProperties.png?raw=true)
+<p>
+    <img src="https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/OAuth2ClientProperties.png?raw=true" height="400" width="700">
+</p>
 
 ## 2. OAuth2ProtectedResourceDetailsConfiguration
 
-![](https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/OAuth2ProtectedResourceDetailsConfiguration.png?raw=true)
+<p>
+    <img src="https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/OAuth2ProtectedResourceDetailsConfiguration.png?raw=true" height="400" width="700">
+</p>
 
 Browse to the parent class of the underlined class and you will see these properties.
 
-![](https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/BaseOAuth2ProtectedResourceDetails.png?raw=true)
+<p>
+    <img src="https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/BaseOAuth2ProtectedResourceDetails.png?raw=true" height="400" width="700">
+</p>
 
 
 # Configure A Facebook Application
 
-![](https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/FacebookApp.png?raw=true)
+<p>
+    <img src="https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/FacebookApp.png?raw=true" height="400" width="700">
+</p>
 
 # Configure Facebook as Identity Provider in WSO2 IS
 
-![](https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/ConfigureFacebookAsIDP.png?raw=true)
+<p>
+    <img src="https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/ConfigureFacebookAsIDP.png?raw=true" height="400" width="700">
+</p>
 
 # Configure Spring Boot application as Service Provider in WSO2 IS
 
-![](https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/SP-Inbound.png?raw=true)
+<p>
+    <img src="https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/SP-Inbound.png?raw=true" height="400" width="700">
+</p>
 
 Detail configuration of the SP,
 
-![](https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/SP-Inbound-Detail.png?raw=true)
+<p>
+    <img src="https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/SP-Inbound-Detail.png?raw=true" height="400" width="700">
+</p>
 
 Outbound Authentication Configuration,
 
-![](https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/SP-Outbound.png?raw=true)
+<p>
+    <img src="https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/sso-facebook/docs/SP-Outbound.png?raw=true" height="400" width="700">
+</p>
 
