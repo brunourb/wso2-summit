@@ -1,0 +1,20 @@
+server:
+  port: 8080
+logging:
+  level:
+    root: debug
+security:
+  oauth2:
+    client:
+      client-id: admin
+      client-secret: admin
+      access-token-uri: https://localhost:9443/oauth2/token
+      user-authorization-uri: https://localhost:9443/oauth2/token/authorize
+      scope:
+        - openid
+    resource:
+      user-info-uri: https://localhost:9443/oauth2/userinfo
+      token-info-uri: https://localhost:9443/oauth2/introspect
+
+
+

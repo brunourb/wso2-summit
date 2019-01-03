@@ -1,0 +1,3 @@
+
+Token Introspection is done by this class.
+org.springframework.security.oauth2.provider.token.RemoteTokenServices
