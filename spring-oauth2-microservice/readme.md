@@ -5,14 +5,14 @@ A demo spring boot application to show how to access resources protected by OAut
 # Resource Owner Password Credentials
 ![](https://github.com/anupamgogoi-wso2/wso2-summit/blob/master/spring-oauth2-microservice/docs/password-grant-type.png?raw=true)
 
-Resource Owner Password Credentials flow has the following requirements:
+"Resource Owner Password Credentials flow has the following requirements:
 
 The client must be highly trusted, as it directly handles user credentials. In most cases, the client should be a first-party app.
 The flow includes the following steps:
 
 1. The **client** prompts **user** to enter their credentials (for instance, a username/password combination).
 2. The **client** sends the credentials and its own identification to the **authorization server**. The **authorization server** validates the information, then returns an access token and optionally a refresh token.
-3. The **client** uses the access token to access resources on the **resource server**.
+3. The **client** uses the access token to access resources on the **resource server**."
 
 # Building The Application
 Navigate to the root of the application (.pom) file and execute 
