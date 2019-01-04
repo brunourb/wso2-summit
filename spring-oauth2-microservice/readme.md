@@ -13,6 +13,7 @@ The flow includes the following steps:
 1. The **client** prompts **user** to enter their credentials (for instance, a username/password combination).
 2. The **client** sends the credentials and its own identification to the **authorization server**. The **authorization server** validates the information, then returns an access token and optionally a refresh token.
 3. The **client** uses the access token to access resources on the **resource server**."
+For details please go through this [page](https://medium.com/google-cloud/understanding-oauth2-and-building-a-basic-authorization-server-of-your-own-a-beginners-guide-cf7451a16f66).
 
 # Building The Application
 Navigate to the root of the application (.pom) file and execute 
