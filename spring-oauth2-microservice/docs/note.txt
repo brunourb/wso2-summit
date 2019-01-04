@@ -1,3 +1,8 @@
 
 Token Introspection is done by this class.
 org.springframework.security.oauth2.provider.token.RemoteTokenServices
+
+The class has a method that calls the URL https://localhost:9443/oauth2/introspect
+and sends the client_id=admin and client_secret=admin to the Authorization Server (WSO2 Identity Server).
+
+Note: It's awkward client_id & client_id nomenclature
