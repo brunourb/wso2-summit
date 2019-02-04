@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.anupam</groupId>
 	<artifactId>https-app</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>https-app</name>
 	<description>Demo project for Spring Boot</description>
 
