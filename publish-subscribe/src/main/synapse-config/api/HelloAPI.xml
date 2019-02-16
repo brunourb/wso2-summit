@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <api context="/hello" name="HelloAPI" xmlns="http://ws.apache.org/ns/synapse">
-    <resource methods="GET" url-mapping="/queue">
+    <resource methods="POST" url-mapping="/publish">
         <inSequence>
+            <log level="full"/>
+            <property name="OUT_ONLY" scope="default" type="STRING" value="true"/>
+            <call>
+                <endpoint key="PublishQueueEP"/>
+            </call>
             <payloadFactory media-type="json">
                 <format>{
-					"firstName": "anupam",
-					"lastName": "gogoi"
+					"status": "success"
 					}</format>
                 <args/>
             </payloadFactory>
-            <log level="full"/>
-            <send>
-                <endpoint key="QueueEP"/>
-            </send>
-        </inSequence>
-        <outSequence>
             <respond/>
-        </outSequence>
+        </inSequence>
+        <outSequence/>
         <faultSequence/>
     </resource>
 </api>

@@ -2,7 +2,7 @@
     <artifact name="HelloAPI" groupId="com.example.publish-subscribe.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/api/HelloAPI.xml</file>
     </artifact>
-    <artifact name="QueueEP" groupId="com.example.publish-subscribe.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
-        <file>src/main/synapse-config/endpoints/QueueEP.xml</file>
+    <artifact name="PublishQueueEP" groupId="com.example.publish-subscribe.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/PublishQueueEP.xml</file>
     </artifact>
 </artifacts>
