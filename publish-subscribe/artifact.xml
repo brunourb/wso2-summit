@@ -5,4 +5,10 @@
     <artifact name="PublishQueueEP" groupId="com.example.publish-subscribe.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/endpoints/PublishQueueEP.xml</file>
     </artifact>
+    <artifact name="ConsumeQueueSeq" groupId="com.example.publish-subscribe.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/ConsumeQueueSeq.xml</file>
+    </artifact>
+    <artifact name="ConsumeQueueEP" groupId="com.example.publish-subscribe.inbound-endpoint" version="1.0.0" type="synapse/inbound-endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/inbound-endpoints/ConsumeQueueEP.xml</file>
+    </artifact>
 </artifacts>
