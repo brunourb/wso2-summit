@@ -1,5 +1,5 @@
-#server:
-#  port: 8081
+server:
+  port: 8081
 #  ssl:
 #    key-store: src/main/resources/ssl/keystore.jks
 #    key-store-password: keystorepassword
