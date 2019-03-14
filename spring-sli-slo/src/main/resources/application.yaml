@@ -1,0 +1,26 @@
+server:
+  port: 8081
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          wso2:
+            clientId: 4QGa7KiyxBEcS4lcgn_2p6tpZ5oa
+            clientSecret: F6xKmN4ffwrCtYV4P_9NAVtPxwMa
+            redirectUri: http://local.app:8081/login/oauth2/code/wso2
+            authorizationGrantType: authorization_code
+            scope:
+            - openid
+            - profile
+          google:
+            clientId: TODO
+            clientSecret: TODO
+        provider:
+          wso2:
+            authorizationUri: http://local.idp:9763/oauth2/authorize
+            tokenUri: http://local.idp:9763/oauth2/token
+            userInfoUri: http://local.idp:9763/oauth2/userinfo
+            jwkSetUri: http://local.idp:9763/oauth2/jwks
+            userNameAttribute: sub
