@@ -14,7 +14,6 @@ import javax.servlet.http.HttpServletResponse;
 @Component
 public class MyAuthRequestRepository implements AuthorizationRequestRepository<OAuth2AuthorizationRequest> {
     OAuth2AuthorizationRequest oAuth2AuthorizationRequest;
-    private String STATE = "";
 
     @Override
     public OAuth2AuthorizationRequest loadAuthorizationRequest(HttpServletRequest httpServletRequest) {
@@ -25,17 +24,11 @@ public class MyAuthRequestRepository implements AuthorizationRequestRepository<O
     @Override
     public void saveAuthorizationRequest(OAuth2AuthorizationRequest oAuth2AuthorizationRequest, HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) {
         this.oAuth2AuthorizationRequest = oAuth2AuthorizationRequest;
-        this.STATE = oAuth2AuthorizationRequest.getState();
-        System.out.println();
     }
 
     @Override
     public OAuth2AuthorizationRequest removeAuthorizationRequest(HttpServletRequest httpServletRequest) {
-        System.out.println();
         return this.oAuth2AuthorizationRequest;
     }
 
-    public String getSTATE() {
-        return STATE;
-    }
 }

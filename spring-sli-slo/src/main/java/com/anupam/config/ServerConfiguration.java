@@ -6,8 +6,6 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.core.Authentication;
-import org.springframework.security.oauth2.client.web.AuthorizationRequestRepository;
-import org.springframework.security.oauth2.core.endpoint.OAuth2AuthorizationRequest;
 import org.springframework.security.web.authentication.SimpleUrlAuthenticationSuccessHandler;
 import org.springframework.security.web.savedrequest.HttpSessionRequestCache;
 import org.springframework.security.web.savedrequest.SavedRequest;
@@ -32,25 +30,25 @@ public class ServerConfiguration extends WebSecurityConfigurerAdapter {
     public void configure(HttpSecurity http) throws Exception {
         http
                 .cors()
-                    .disable()
+                .disable()
                 .formLogin()
-                    .disable()
+                .disable()
                 .httpBasic()
-                    .disable()
+                .disable()
                 .authorizeRequests()
-                    .antMatchers("/")
-                        .permitAll()
-                    .antMatchers("/me","/exit")
-                        .authenticated()
-                        .and()
-                    .oauth2Login()
-                        .authorizationEndpoint()
-                            .authorizationRequestRepository(myAuthRequestRepository)
-                            .and()
-                        .redirectionEndpoint()
-                            .baseUri("/login/oauth2/code/*")
-                            .and()
-                    .successHandler(oAuth2AuthenticationSuccessHandler);
+                .antMatchers("/")
+                .permitAll()
+                .antMatchers("/me", "/exit")
+                .authenticated()
+                .and()
+                .oauth2Login()
+                .authorizationEndpoint()
+                .authorizationRequestRepository(myAuthRequestRepository)
+                .and()
+                .redirectionEndpoint()
+                .baseUri("/login/oauth2/code/*")
+                .and()
+                .successHandler(oAuth2AuthenticationSuccessHandler);
 
 
     }
@@ -60,11 +58,18 @@ public class ServerConfiguration extends WebSecurityConfigurerAdapter {
      */
     @Component
     public class OAuth2AuthenticationSuccessHandler extends SimpleUrlAuthenticationSuccessHandler {
+        private String SESSION_STATE;
+
         @Override
         public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException, ServletException {
+            this.SESSION_STATE = request.getParameter("session_state");
             SavedRequest savedRequest = new HttpSessionRequestCache().getRequest(request, response);
             System.out.println(savedRequest.getRedirectUrl());
             response.sendRedirect(savedRequest.getRedirectUrl());
+        }
+
+        public String getSESSION_STATE() {
+            return SESSION_STATE;
         }
     }
 
