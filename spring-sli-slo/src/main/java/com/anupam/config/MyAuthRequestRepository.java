@@ -17,7 +17,6 @@ public class MyAuthRequestRepository implements AuthorizationRequestRepository<O
 
     @Override
     public OAuth2AuthorizationRequest loadAuthorizationRequest(HttpServletRequest httpServletRequest) {
-        System.out.println();
         return null;
     }
 
