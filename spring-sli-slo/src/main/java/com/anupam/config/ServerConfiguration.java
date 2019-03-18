@@ -30,25 +30,25 @@ public class ServerConfiguration extends WebSecurityConfigurerAdapter {
     public void configure(HttpSecurity http) throws Exception {
         http
                 .cors()
-                .disable()
+                    .disable()
                 .formLogin()
-                .disable()
+                    .disable()
                 .httpBasic()
-                .disable()
+                    .disable()
                 .authorizeRequests()
-                .antMatchers("/")
-                .permitAll()
-                .antMatchers("/me", "/exit")
-                .authenticated()
-                .and()
+                    .antMatchers("/")
+                        .permitAll()
+                    .antMatchers("/me", "/exit")
+                    .authenticated()
+                        .and()
                 .oauth2Login()
-                .authorizationEndpoint()
-                .authorizationRequestRepository(myAuthRequestRepository)
-                .and()
-                .redirectionEndpoint()
-                .baseUri("/login/oauth2/code/*")
-                .and()
-                .successHandler(oAuth2AuthenticationSuccessHandler);
+                    .authorizationEndpoint()
+                        .authorizationRequestRepository(myAuthRequestRepository)
+                        .and()
+                    .redirectionEndpoint()
+                        .baseUri("/login/oauth2/code/*")
+                        .and()
+                    .successHandler(oAuth2AuthenticationSuccessHandler);
 
 
     }
