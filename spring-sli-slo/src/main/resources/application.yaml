@@ -9,7 +9,7 @@ spring:
           wso2:
             clientId: 4QGa7KiyxBEcS4lcgn_2p6tpZ5oa
             clientSecret: F6xKmN4ffwrCtYV4P_9NAVtPxwMa
-            redirectUri: http://local.app:8081/login/oauth2/code/wso2
+            redirectUri: http://localhost:8081/login/oauth2/code/wso2
             authorizationGrantType: authorization_code
             scope:
             - openid
