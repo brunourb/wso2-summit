@@ -15,12 +15,12 @@ spec:
       hostAliases:
       containers:
       - name: spring-app
-        image: "gcr.io/wso2-is-17/spring-app-https"
+        image: "gcr.io/wso2-is-17/spring-app"
         readinessProbe:
           httpGet:
             path: "/service/pizza/menu"
             port: 8081
-            scheme: HTTPS
+            scheme: HTTP
           initialDelaySeconds: 180
           periodSeconds: 10
         ports:

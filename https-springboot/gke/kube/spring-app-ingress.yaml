@@ -3,13 +3,12 @@ kind: Ingress
 metadata:
   name: spring-app-ingress
   namespace: spring
-  annotations:
-    kubernetes.io/ingress.global-static-ip-name: helloweb-ip
 spec:
   tls:
   - secretName: is-cert
   rules:
-  - http:
+  - host: spring.demo.com
+    http:
       paths:
       - path: /*
         backend:
