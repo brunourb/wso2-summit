@@ -4,10 +4,8 @@ metadata:
   name: spring-app-ingress
   namespace: spring
 spec:
-  tls:
-  - secretName: is-cert
   rules:
-  - host: spring.demo.com
+  - host: spring.demo.app
     http:
       paths:
       - path: /*
