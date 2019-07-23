@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/service/pizza")
@@ -30,7 +31,8 @@ public class PizzaEndpoint {
     }
 
     @GetMapping("/menu")
-    public List<Pizza> getMenu() {
+    public List<Pizza> getMenu(@RequestHeader Map<String, String> headers) {
+        System.out.println(headers.get("x-jwt-assertion"));
         return list;
     }
 

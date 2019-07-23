@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-app-deployment
+spec:
+  selector:
+    matchLabels:
+      app: spring-app
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: spring-app
+    spec:
+      hostAliases:
+      containers:
+      - name: spring-app
+        image: "gcr.io/wso2-is-17/spring-app-https"
+        readinessProbe:
+          httpGet:
+            path: "/service/pizza/menu"
+            port: 8081
+            scheme: HTTPS
+          initialDelaySeconds: 180
+          periodSeconds: 10
+        ports:
+        - containerPort: 8081
+          protocol: TCP
+

@@ -3,12 +3,21 @@ kind: Ingress
 metadata:
   name: spring-app-ingress
   namespace: spring
+  annotations:
+    kubernetes.io/ingress.global-static-ip-name: helloweb-ip
 spec:
   rules:
   - host: spring.demo.app
     http:
       paths:
-      - path: /*
+      - path: /service/pizza/hello
+        backend:
+          serviceName: spring-app-service
+          servicePort: 9000
+  - host: spring.demo.test
+    http:
+      paths:
+      - path: /service/pizza/menu
         backend:
           serviceName: spring-app-service
           servicePort: 9000
