@@ -32,8 +32,8 @@ public class PizzaEndpoint {
 
     @GetMapping("/menu")
     public List<Pizza> getMenu(@RequestHeader Map<String, String> headers) {
-        System.out.println(headers.get("x-jwt-assertion"));
-        return list;
+            System.out.println(headers.get("x-jwt-assertion"));
+            return list;
     }
 
     @GetMapping("/menu/{Id}")
